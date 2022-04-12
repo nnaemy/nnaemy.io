@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGBA Converter</title>
+    <link rel="stylesheet" href="rgba.css">
+</head>
+<body>
+    <div class="header">
+        <h1>RGBA to Hex Converter</h1>
+    </div>
+    <div class="content">
+        <form onsubmit="return convert(event)">
+            <label>
+                Red
+                <input type="number" min="0" max="256" name="red" id="red"
+                placeholder="Red value" title="red" required>
+            </label>
+
+            <label>
+                Green
+                <input type="number" min="0" max="256" name="green" id="green"
+                placeholder="Green value" title="green" required>
+            </label>
+
+            <label>
+                Blue
+                <input type="number" min="0" max="256" name="blue" id="blue"
+                placeholder="blue value" title="blue" required>
+            </label>
+
+            <label>
+                Alpha
+                <input type="number" min="0" max="256" name="alpha" id="alpha"
+                placeholder="Alpah value(0-100)" title="alpha" required>
+            </label>
+
+            <br>
+            <button type="submit">Calculate</button>
+            </br>
+        </form>
+        <div id="resultcontainer">
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="rgba.js"></script>
+</body>
+</html>
